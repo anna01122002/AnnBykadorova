@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Опрос</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="main.css" rel="stylesheet">
+
+</head>
+<body>
+
+<nav class="py-2 bg-light border-bottom">
+    <ul class="nav justify-content-center">
+        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Домашняя страница</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-dark px-2 active" aria-current="page">Опросы</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Информация</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Обратная связь</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Контакты</a></li>
+    </ul>
+</nav>
+
+<div class="container py-4">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="1.jpg" class="rounded mx-auto d-block w-70" width="500" height="300">
+            </div>
+            <div class="carousel-item">
+                <img src="2.jpg" class="rounded mx-auto d-block w-70" width="500" height="300">
+            </div>
+            <div class="carousel-item">
+                <img src="3.jpg" class="rounded mx-auto d-block w-70" width="500" height="300">
+            </div>
+            <div class="carousel-item">
+                <img src="4.jpg" class="rounded mx-auto d-block w-70" width="500" height="300">
+            </div>
+            <div class="carousel-item">
+                <img src="5.jpg" class="rounded mx-auto d-block w-70" width="500" height="300">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+        </button>
+    </div>
+</div>
+
+<div class="container py-4">
+    <h1 id="head" class="text-center">Как вообще по ощущениям в финашечке?:(</h1>
+</div>
+
+<div class="container py-4">
+    <div class="p-5 mb-4 bg-light rounded-2">
+        <div class="col-sm-3">
+            <label id="name" class="form-label"><b>Имя</b></label>
+            <input type="text" class="form-control" name="name" placeholder="Введите имя" required="">
+        </div>
+        <div class="col-sm-3">
+            <div class="my-4">
+            <label id="email" class="form-label"><b>Ваша почта</b></label>
+            <input type="text" class="form-control" name="email" placeholder="Введите email" required="">
+            </div>
+        </div>
+        <div class="my-4">
+            <span id="role" class="text-start"><b>Кто вы по жизни в финашке</b></span>
+            <div class="form-check">
+                <input id="teacher" name="role" type="radio" class="form-check-input" checked="" required="">
+                <label class="form-check-label" for="teacher">Препод</label>
+            </div>
+            <div class="form-check">
+                <input id="student" name="role" type="radio" class="form-check-input" required="">
+                <label class="form-check-label" for="student">Студент</label>
+            </div>
+            <div class="form-check">
+                <input id="abiturient" name="role" type="radio" class="form-check-input" required="">
+                <label class="form-check-label" for="abiturient">Абитуриент</label>
+            </div>
+            <div class="form-check">
+                <input id="vlad" name="role" type="radio" class="form-check-input" required="">
+                <label class="form-check-label" for="vlad">Влад</label>
+            </div>
+            <div class="form-check">
+                <input id="null" name="role" type="radio" class="form-check-input" required="">
+                <label class="form-check-label" for="null">Никто</label>
+            </div>
+        </div>
+
+        <div class="my-4">
+            <label id="feelings" class="form-label"><b>Насколько сильно вы любите финашку</b></label>
+            <div class="form-check">
+                <input name="feelings" type="checkbox" class="form-check-input" id="sunny">
+                <label class="form-check-label" for="sunny">0</label>
+            </div>
+            <div class="form-check">
+                <input name="feelings" type="checkbox" class="form-check-input" id="cloudy">
+                <label class="form-check-label" for="cloudy">1</label>
+            </div>
+            <div class="form-check">
+                <input name="feelings" type="checkbox" class="form-check-input" id="snow">
+                <label class="form-check-label" for="snow">2</label>
+            </div>
+            <div class="form-check">
+                <input name="feelings" type="checkbox" class="form-check-input" id="rain">
+                <label class="form-check-label" for="rain">12</label>
+            </div>
+            <div class="form-check">
+                <input name="feelings" type="checkbox" class="form-check-input" id="hail">
+                <label class="form-check-label" for="hail">1000-7</label>
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <label id="health" class="form-label"><b>Как вы чувствуете себя после 5 пар </b></label>
+            <div class="col-md-5">
+            <select class="form-select" name="health" required="">
+                <option value="">Прекрасно</option>
+                <option>Нормально</option>
+                <option>Голодно</option>
+                <option>Умер</option>
+            </select>
+            </div>
+        </div>
+
+
+        <div class="my-4">
+            <label id="mess"><b>Понравился ли Вам этот опрос?</b></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Если не понравился - я вас понимаю, мне тоже не особо" rows="4"></textarea>
+        </div>
+
+        <div class="my-4">
+        <button type="button" class="btn btn-success">Отправить</button>
+        </div>
+
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+
+#head{
+    color: #030101;
+}
+
+main, html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #d796d5;
+}
+
+#season {
+    font-size: 1.3em;
+    font-family: "Times New Roman";
+}
+
+#temperature {
+    font-size: 1.3em;
+    font-family: "Times New Roman";
+}
+
+#weather {
+    font-size: 1.3em;
+    font-family: "Times New Roman";
+}
+
+#name {
+    font-size: 1.3em;
+    font-family: "Times New Roman";
+}
+
+#email {
+    font-size: 1.3em;
+    font-family: "Times New Roman";
+}
+
+#mess {
+    font-size: 1.3em;
+    font-family: "Times New Roman";
+}
